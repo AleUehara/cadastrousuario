@@ -4,10 +4,17 @@ PYTHON 2.7
 EASY_INSTALL
 DJANGO 1.5.1 (Comando: easy_install django)
 
+3) nome do projeto tera de ser cadastrousuario
+mkdir cadastrousuario
+cd cadastrousuario
+git clone https://github.com/AleUehara/cadastrousuario.git
 
-2)rodar o seguinte comando:
+2) Criar diretorio na raiz do projeto
+mkdir db
+
+4)rodar o seguinte comando:
 python manage.py syncdb
 python manage.py runserver
 
-3) URL
+5) URL
 http://localhost:8000/
