@@ -23,7 +23,7 @@ def formulario(request):
                 p = Usuario(nome=nome, email=email,senha=senha, idade=idade, profissao=profissao, salario=salario, tipopessoa=tipopessoa, cpf_cnpj=cpf_cnpj)
                 p.save()
 
-                return render_to_response("salvo.html", {})
+                return render_to_response("salvo.html", {"usuario" : nome})
         else:
                 form = UsuarioForm()
                 
