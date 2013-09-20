@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div>
+	LISTA
+	<ul>
+    {% for usuario in usuarios %}
+        <li>{{ usuario.nome }} - {{ usuario.email }} - {{ usuario.idade }} - {{ usuario.profissao }} - {{ usuario.salario }} - {{ usuario.tipopessoa }} - {{ usuario.cpf_cnpj }}</li>
+    {% empty %}
+        <li>Sem Usuários cadastrados</li>
+    {% endfor %}
+    </ul>
+</div>
+{% endblock %}

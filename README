@@ -1,0 +1,13 @@
+HOWTO
+1) instalar:
+PYTHON 2.7
+EASY_INSTALL
+DJANGO 1.5.1 (Comando: easy_install django)
+
+
+2)rodar o seguinte comando:
+python manage.py syncdb
+python manage.py runserver
+
+3) URL
+http://localhost:8000/
